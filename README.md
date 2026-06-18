@@ -56,7 +56,7 @@ Passthrough Camera Frame
 
 
 
-## Project Structure
+## Project Structure (Asset/)
 ```bash
 ├── ...
 ├── ProcessingPipeline/
@@ -93,7 +93,7 @@ Passthrough Camera Frame
 ---
 
 ## Models
-The models recognize 16 classes from the 'Grasping in the Wild' dataset (https://universe.roboflow.com/iwrist/grasping-in-the-wild):
+The models (in `Asset/ProcessingPipeline/SentisInference/Models/`) recognize 16 classes from the ['Grasping in the Wild' dataset](https://universe.roboflow.com/iwrist/grasping-in-the-wild):
 - Bowl
 - CanOfCocaCola
 - FryingPan
@@ -113,6 +113,12 @@ The models recognize 16 classes from the 'Grasping in the Wild' dataset (https:/
 
 ---
 
+## Installation 
+The project should have already been cloned from the main project, then:
+
+- Open the project in Unity, change 'Build Profiles' to Android
+- Plug in the Meta Quest and then hit 'Build and Run'
+
 ## Usage / Controls
  
 No hand controllers are required:
@@ -126,7 +132,6 @@ No hand controllers are required:
    mask overlay appears on top of the object once segmentation completes.
 5. Look away to deselect — the info panel and mask overlay are hidden until a new object is
    selected.
-
 
 ---
 ## Credits
